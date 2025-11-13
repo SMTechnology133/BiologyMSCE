@@ -84,7 +84,7 @@ button{
 	 	
 	 	a{
 	color: teal;
-	font-size:12px;
+	font-size:8px;
 	border-radius: 8px;
 	padding: 2px;
 	background-color: teal;
@@ -209,6 +209,8 @@ border-radius: 20px;
 padding: 1px;
 margin-top: 6px;
 }
+
+
 	</style>
 	
  </head>
@@ -234,18 +236,18 @@ margin-top: 6px;
       <ul class="nav navbar-nav">
         <li><a onclick="africaOnlineHome();color(this);" style="color: orange;"><mark>🏡Home</mark></a></li>
         
-        <li><a onclick="color(this);s300();" style="background: teal;" href="#"><mark>🤖GPT3000</mark></a></li>
+        <li><a onclick="color(this); Gemini();" style="background: teal;"><mark>🤖Gemini</mark></a></li>
         
         <li class="dropdown">
-          <a onclick="color(this)" style="color: orange; background: teal; border: solid orange 1px;" data-toggle="dropdown" class="dropdown-toggle" href="#"> <mark>📄Option<b class="caret"></b></mark></a>
+          <a onclick="color(this)" style="color: orange; background: teal; border: solid orange 1px;" data-toggle="dropdown" class="dropdown-toggle"> <mark>📄Option<b class="caret"></b></mark></a>
           
           <ul role="menu" class="dropdown-menu">
             
-           <li><a style="color: orange; background: teal;" href="file:///storage/emulated/0/projects/examMaterial/jceExams/englishExam/subjects.html">📄Junior Level Learn</a></li>
+           <li><a style="color: orange; background: teal;" onclick="passcode();">📄Junior Level Learn</a></li>
            
-            <li><a style="color: orange; background: teal;" onclick="color(this);passcode();">🔘3D AR Applications</a></li>
+            <li><a style="color: orange; background: teal;" onclick="color(this);ARpasscode();">🔘3D AR Applications</a></li>
             
-              <li><a onclick="color(this);" style="color: orange; background: teal;" href="file:///storage/emulated/0/projects/examMaterial/jceExams/englishExam/subjects.html">🎉Online Business Ad</a></li>
+              <li><a onclick="color(this);" style="color: orange; background: teal;" href="file:///storage/emulated/0/projects/examMaterial/jceExams/englishExam/subjects.html">🎉Online Market Ads</a></li>
   
              <li><a onclick="color(this); showAlert('This application is still under development, if you have any feedback +265 0782177920 is the number to use, if it happens that you have a legitimete business there is an advertising space on africa online market. you are welcome.');" style="color: orange; background: teal;">📄Send any Feedback</a></li>
           </ul>
@@ -857,7 +859,7 @@ margin-top: 6px;
 	   <button onclick="color(this);" style="border-color: orange" type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#myModal1"><mark>📰Detail</mark></button>
 	   
 	   &nbsp;
-	   <button style="border-color:orange" type="button" class="btn btn-secondary btn-sm" onclick="color(this);"><mark>🎓Learn</mark></button>
+	   <button style="border-color:orange" type="button" class="btn btn-secondary btn-sm" onclick="color(this); passcode();"><mark>🎓Learn</mark></button>
 	   
 	   &nbsp;
 	   <button style="border-color:orange" type="button" class="btn btn-secondary btn-sm" onclick="scrollToTop();color(this);"><mark>Top⤴</mark></button><br><br>
@@ -874,7 +876,7 @@ margin-top: 6px;
     <iframe id="pdfFrame" src=""></iframe>
   </div>
   
-  <button style="color: white; background: orange" onclick="s300()">Open GPT3000</button>
+  <button style="color: white; background: orange" onclick="Gemini();">Ask Gemini</button>
   
   <button class="close-btn" onclick="closePdfModal()">Close</button>
 </div>
@@ -886,7 +888,7 @@ margin-top: 6px;
 	 <span onclick="nextEnglishAppPage()" style="text-decoration: none; color: orange;" >&nbsp;Next Page&raquo;</span>	
 </div><br>
 
-	<button onclick="s300();" class="floating-btn" onclick="scrollToTop(); s300();">🤖</button>
+	<button class="floating-btn" onclick="scrollToTop(); Gemini();">🤖</button>
  
 	 	  <script>
     function scrollToTop() {
